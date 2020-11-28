@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "778963401421",
+    "firebase_url": "https://pizzahut-bc4fa.firebaseio.com",
+    "project_id": "pizzahut-bc4fa",
+    "storage_bucket": "pizzahut-bc4fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778963401421:android:e600afaf524cdb7dc34784",
+        "android_client_info": {
+          "package_name": "com.example.pizzahut"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "778963401421-rv5pa9v7ntkh40dqvu47glg6f3cdsn1u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmsK3VmjJ4Y1oqXp6AkYk7aQ1omm0AvdI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "778963401421-rv5pa9v7ntkh40dqvu47glg6f3cdsn1u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

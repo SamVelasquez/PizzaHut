@@ -48,7 +48,8 @@
             android:hint="Ingrese Contraseña"
             android:inputType="textPassword"
             android:textColor="#FFFFFF"
-            android:textColorHint="#FFFFFF" />
+            android:textColorHint="#FFFFFF"
+            android:textSize="18sp" />
     </LinearLayout>
 
     <ProgressBar

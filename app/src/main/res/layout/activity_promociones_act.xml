@@ -52,6 +52,7 @@
                 android:layout_height="51dp"
                 android:background="#FFAB09"
                 android:text="Calcular Promocion"
+                android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"

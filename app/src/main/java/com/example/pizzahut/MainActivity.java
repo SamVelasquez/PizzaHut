@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
             for(int i = 1; i < 10; i++)
             {
                 try {
-                    Thread.sleep(10);
+                    Thread.sleep(1000);
 
                 }catch (Exception e)
                 {

@@ -45,6 +45,6 @@ public class listadoClientes {
 
     @Override
     public String toString() {
-        return nombre +" " + destino + " " + tipopromo ;
+        return nombre +", " + destino + ", " + tipopromo ;
     }
 }

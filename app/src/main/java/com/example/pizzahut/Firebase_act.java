@@ -50,7 +50,6 @@ public class Firebase_act extends AppCompatActivity {
 
 
 
-
         // desde aqui parte la base de datos
 
         inicializarBase();
@@ -60,7 +59,7 @@ public class Firebase_act extends AppCompatActivity {
             public void onClick(View view) {
 
 
-                if (!nombrecliente.getText().equals("")){
+                if (!nombrecliente.getText().toString().isEmpty() && !destinocliente.getText().toString().isEmpty() && !tipopromo.getText().toString().isEmpty() ){
                     //
                         listadoClientes n = new listadoClientes();
                         n.setId(UUID.randomUUID().toString());
@@ -70,15 +69,18 @@ public class Firebase_act extends AppCompatActivity {
 
                         databaseReference.child("listadoClientes").child(n.getId()).setValue(n);
 
+
+
                     Toast.makeText(getBaseContext(),"Guardo exitosamente.",Toast.LENGTH_LONG).show();
                 }
                 else {
-                    Toast.makeText(getBaseContext(),"debe rellenar el campo.",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getBaseContext(),"Debe rellenar los campos",Toast.LENGTH_LONG).show();
                 }
 
             }
         });
     }
+
 
     public void inicializarBase(){
         FirebaseApp.initializeApp(this);

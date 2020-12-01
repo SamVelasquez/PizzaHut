@@ -1,8 +1,5 @@
 package com.example.pizzahut;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -10,6 +7,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.ArrayList;
 
 import calculos.Promociones;
 
@@ -32,10 +33,12 @@ public class Promociones_act extends AppCompatActivity {
         texto = (TextView)findViewById(R.id.texto);
 
         //spinner 2
-
         String [] NombresClientes = {"Ramiro", "Rosa", "Robert"};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, NombresClientes);
         spinner2.setAdapter(adapter);// asocio el spinner2 con el array
+
+
+
 
         //spinner3
         String [] NombresPromociones = {"Pizza Promo", "Master Pizza", "Pizza Max"};
@@ -44,11 +47,14 @@ public class Promociones_act extends AppCompatActivity {
 
 
 
+
+
         calculopromocion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String nombres = spinner2.getSelectedItem().toString();
                 String promo = spinner3.getSelectedItem().toString();
+
 
                 Promociones promociones = new Promociones(); // importo la clase
 
